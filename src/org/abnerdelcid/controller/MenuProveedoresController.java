@@ -96,14 +96,12 @@ public class MenuProveedoresController implements Initializable {
         tvPoveedores.setItems(getProveedores());
         colCodP.setCellValueFactory(new PropertyValueFactory<Proveedores, Integer>("codigoProveedor"));
         colNITP.setCellValueFactory(new PropertyValueFactory<Proveedores, String>("NITProveedor"));
-        //colNomP.setCellValueFactory(new PropertyValueFactory<Proveedor, String>("nombresProveedor"));
-        //colApeP.setCellValueFactory(new PropertyValueFactory<Proveedor, String>("apellidosProveedor"));
+
         colDireP.setCellValueFactory(new PropertyValueFactory<Proveedores, String>("direccionProveedor"));
         colRazonS.setCellValueFactory(new PropertyValueFactory<Proveedores, String>("razonSocial"));
         colContactoP.setCellValueFactory(new PropertyValueFactory<Proveedores, String>("contactoPrincipal"));
         colSitioWeb.setCellValueFactory(new PropertyValueFactory<Proveedores, String>("paginaWeb"));
-        //colTelP.setCellValueFactory(new PropertyValueFactory<Proveedor, String>("telefonoProveedor"));
-        //colEmailP.setCellValueFactory(new PropertyValueFactory<Proveedor, String>("emailProveedor"));
+
     }
 
     public void seleccionarElemento() {
@@ -150,7 +148,7 @@ public class MenuProveedoresController implements Initializable {
                 btnEliminarP.setText("Cancelar");
                 btnEditarP.setDisable(true);
                 btnReportesP.setDisable(true);
-                //imgAgregar.setImage(new Image("URL"));
+         
                 tipoDeOperador = operador.ACTUALIZAR;
                 break;
             case ACTUALIZAR:
@@ -162,10 +160,9 @@ public class MenuProveedoresController implements Initializable {
                 btnEliminarP.setText("Eliminar");
                 btnEditarP.setDisable(false);
                 btnReportesP.setDisable(false);
-                /*regresar de nuevo a sus imagenes originales
-                imgAgregar.setImage(new Image("URL"));*/
+
                 tipoDeOperador = operador.NINGUNO;
-                // cargarDatos();
+          
                 break;
         }
     }
@@ -208,8 +205,6 @@ public class MenuProveedoresController implements Initializable {
                 btnEliminarP.setText("Eliminar");
                 btnEditarP.setDisable(false);
                 btnReportesP.setDisable(false);
-                /*regresar de nuevo a sus imagenes originales
-                imgAgregar.setImage(new Image("URL"));*/
                 tipoDeOperador = operador.NINGUNO;
                 break;
             default:
@@ -308,14 +303,12 @@ public class MenuProveedoresController implements Initializable {
     public void desactivarControles() {
         txtCodigoP.setEditable(false);
         txtNITP.setEditable(false);
-        //txtNombresP.setEditable(false);
-        //txtApellidosP.setEditable(false);
+
         txtDireccionP.setEditable(false);
         txtRazonSocial.setEditable(false);
         txtContactoP.setEditable(false);
         txtSitioWeb.setEditable(false);
-        //txtTelefono.setEditable(false);
-        //txtEmailP.setEditable(false);
+ 
     }
 
     public void activarControles() {

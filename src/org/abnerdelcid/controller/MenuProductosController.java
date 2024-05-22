@@ -45,9 +45,7 @@ public class MenuProductosController implements Initializable {
     @FXML
     private Button btnReporte;
 
-    /**
-     * Initializes the controller class.
-     */
+ 
            @FXML Button btnRegresar;
     private Principal escenarioPrincipal; 
     @Override
